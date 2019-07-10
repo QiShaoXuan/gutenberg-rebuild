@@ -1,0 +1,1 @@
+{"version":3,"sources":["@wordpress/docgen/src/get-dependency-path.js"],"names":["module","exports","token","source","value"],"mappings":"AAAAA,MAAM,CAACC,OAAP,GAAiB,UAAUC,KAAV,EAAkB;AAClC,SAAOA,KAAK,CAACC,MAAN,CAAaC,KAApB;AACA,CAFD","sourcesContent":["module.exports = function( token ) {\n\treturn token.source.value;\n};\n"]}

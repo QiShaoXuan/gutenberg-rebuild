@@ -1,0 +1,1 @@
+{"version":3,"sources":["@wordpress/annotations/src/index.js"],"names":[],"mappings":"AAAA;;;AAGA,OAAO,SAAP;AACA,OAAO,UAAP;AACA,OAAO,SAAP","sourcesContent":["/**\n * Internal dependencies\n */\nimport './store';\nimport './format';\nimport './block';\n\n"]}

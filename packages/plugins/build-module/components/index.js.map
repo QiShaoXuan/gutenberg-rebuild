@@ -1,0 +1,1 @@
+{"version":3,"sources":["@wordpress/plugins/src/components/index.js"],"names":["default","PluginArea","withPluginContext"],"mappings":"AAAA,SAASA,OAAO,IAAIC,UAApB,QAAsC,eAAtC;AACA,SAASC,iBAAT,QAAkC,kBAAlC","sourcesContent":["export { default as PluginArea } from './plugin-area';\nexport { withPluginContext } from './plugin-context';\n"]}

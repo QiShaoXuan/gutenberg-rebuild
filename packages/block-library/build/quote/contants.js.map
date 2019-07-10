@@ -1,0 +1,1 @@
+{"version":3,"sources":["@wordpress/block-library/src/quote/contants.js"],"names":["ATTRIBUTE_QUOTE","ATTRIBUTE_CITATION"],"mappings":";;;;;;AAAO,IAAMA,eAAe,GAAG,OAAxB;;AACA,IAAMC,kBAAkB,GAAG,UAA3B","sourcesContent":["export const ATTRIBUTE_QUOTE = 'value';\nexport const ATTRIBUTE_CITATION = 'citation';\n"]}

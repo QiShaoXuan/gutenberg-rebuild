@@ -1,0 +1,1 @@
+{"version":3,"sources":["@wordpress/rich-text/src/special-characters.js"],"names":["LINE_SEPARATOR","OBJECT_REPLACEMENT_CHARACTER"],"mappings":";;;;;;;AAAA;;;AAGO,IAAMA,cAAc,GAAG,QAAvB;;AACA,IAAMC,4BAA4B,GAAG,QAArC","sourcesContent":["/**\n * Line separator character.\n */\nexport const LINE_SEPARATOR = '\\u2028';\nexport const OBJECT_REPLACEMENT_CHARACTER = '\\ufffc';\n"]}

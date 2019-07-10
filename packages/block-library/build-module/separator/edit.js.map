@@ -1,0 +1,1 @@
+{"version":3,"sources":["@wordpress/block-library/src/separator/edit.js"],"names":["SeparatorEdit","className"],"mappings":";AAAA,eAAe,SAASA,aAAT,OAAwC;AAAA,MAAdC,SAAc,QAAdA,SAAc;AACtD,SAAO;AAAI,IAAA,SAAS,EAAGA;AAAhB,IAAP;AACA","sourcesContent":["export default function SeparatorEdit( { className } ) {\n\treturn <hr className={ className } />;\n}\n"]}

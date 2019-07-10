@@ -1,0 +1,1 @@
+{"version":3,"sources":["@wordpress/edit-post/src/hooks/index.js"],"names":[],"mappings":"AAAA;;;AAGA,OAAO,cAAP;AACA,OAAO,yBAAP","sourcesContent":["/**\n * Internal dependencies\n */\nimport './components';\nimport './validate-multiple-use';\n"]}
