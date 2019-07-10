@@ -8,6 +8,7 @@ gutenberg.zip
 # Directories/files that may appear in your environment
 .DS_Store
 *.log
+.idea
 phpcs.xml
 yarn.lock
 docker-compose.override.yml

@@ -1,24 +1,18 @@
 {
-  "name": "gutenberg-rebuild",
-  "version": "1.0.0",
-  "description": "lock and rebuild gutenberg.js at version 5.4",
-  "main": ".eslintrc.js",
-  "dependencies": {},
-  "devDependencies": {},
-  "scripts": {
-		"build:packages": "node ./bin/packages/build.js",
-		"build": "npm run build:packages"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/QiShaoXuan/gutenberg-rebuild.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/QiShaoXuan/gutenberg-rebuild/issues"
-  },
-  "homepage": "https://github.com/QiShaoXuan/gutenberg-rebuild#readme",
+	"name": "gutenberg",
+	"version": "5.4.0",
+	"private": true,
+	"description": "A new WordPress editor experience",
+	"repository": "git+https://github.com/WordPress/gutenberg.git",
+	"author": "The WordPress Contributors",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"editor"
+	],
+	"config": {
+		"GUTENBERG_PHASE": 2
+	},
 	"dependencies": {
 		"@wordpress/a11y": "file:packages/a11y",
 		"@wordpress/annotations": "file:packages/annotations",
@@ -128,5 +122,94 @@
 		"uuid": "3.3.2",
 		"webpack": "4.8.3",
 		"webpack-rtl-plugin": "github:yoavf/webpack-rtl-plugin#develop"
+	},
+	"npmPackageJsonLintConfig": {
+		"extends": "@wordpress/npm-package-json-lint-config",
+		"rules": {
+			"description-format": [
+				"error",
+				{
+					"requireCapitalFirstLetter": true,
+					"requireEndingPeriod": true
+				}
+			],
+			"require-publishConfig": "error",
+			"require-repository-directory": "error",
+			"valid-values-author": [
+				"error",
+				[
+					"The WordPress Contributors"
+				]
+			],
+			"valid-values-publishConfig": [
+				"error",
+				[
+					{
+						"access": "public"
+					}
+				]
+			]
+		}
+	},
+	"scripts": {
+		"prebuild": "npm run check-engines",
+		"clean:packages": "rimraf ./packages/*/build ./packages/*/build-module ./packages/*/build-style ./packages/*/node_modules",
+		"prebuild:packages": "npm run clean:packages && lerna run build",
+		"build:packages": "node ./bin/packages/build.js",
+		"build": "npm run build:packages",
+		"check-engines": "wp-scripts check-engines",
+		"check-licenses": "concurrently \"wp-scripts check-licenses --prod --gpl2\" \"wp-scripts check-licenses --dev\"",
+		"precheck-local-changes": "npm run docs:build",
+		"check-local-changes": "( git diff -U0 | xargs -0 node bin/process-git-diff ) || ( echo \"There are local uncommitted changes after one or both of 'npm install' or 'npm run docs:build'!\" && exit 1 );",
+		"predev": "npm run check-engines",
+		"dev": "npm run build:packages && concurrently \"wp-scripts start\" \"npm run dev:packages\"",
+		"dev:packages": "node ./bin/packages/watch.js",
+		"docs:build": "node ./docs/tool && node ./bin/update-readmes",
+		"fixtures:clean": "rimraf \"packages/e2e-tests/fixtures/blocks/*.+(json|serialized.html)\"",
+		"fixtures:server-registered": "docker-compose run -w /var/www/html/wp-content/plugins/gutenberg --rm wordpress ./bin/get-server-blocks.php > test/integration/full-content/server-registered.json",
+		"fixtures:generate": "npm run fixtures:server-registered && cross-env GENERATE_MISSING_FIXTURES=y npm run test-unit",
+		"fixtures:regenerate": "npm run fixtures:clean && npm run fixtures:generate",
+		"lint": "concurrently \"npm run lint-js\" \"npm run lint-pkg-json\" \"npm run lint-css\"",
+		"lint-js": "wp-scripts lint-js .",
+		"lint-js:fix": "npm run lint-js -- --fix",
+		"lint-php": "docker-compose run --rm composer run-script lint",
+		"lint-pkg-json": "wp-scripts lint-pkg-json ./packages",
+		"lint-css": "wp-scripts lint-style '**/*.scss'",
+		"lint-css:fix": "npm run lint-css -- --fix",
+		"package-plugin": "./bin/build-plugin-zip.sh",
+		"pot-to-php": "./bin/pot-to-php.js",
+		"precommit": "lint-staged",
+		"publish:check": "npm run build:packages && lerna updated",
+		"publish:dev": "npm run build:packages && lerna publish --npm-tag next",
+		"publish:prod": "npm run build:packages && lerna publish",
+		"test": "npm run lint && npm run test-unit",
+		"pretest-e2e": "cross-env SCRIPT_DEBUG=false ./bin/reset-e2e-tests.sh",
+		"test-e2e": "wp-scripts test-e2e --config packages/e2e-tests/jest.config.js",
+		"test-e2e:watch": "npm run test-e2e -- --watch",
+		"test-php": "npm run lint-php && npm run test-unit-php",
+		"test-unit": "wp-scripts test-unit-js --config test/unit/jest.config.js",
+		"test-unit:update": "npm run test-unit -- --updateSnapshot",
+		"test-unit:watch": "npm run test-unit -- --watch",
+		"test-unit-php": "docker-compose run --rm wordpress_phpunit phpunit",
+		"test-unit-php-multisite": "docker-compose run -e WP_MULTISITE=1 --rm wordpress_phpunit phpunit",
+		"playground:build": "npm run build:packages && parcel build playground/src/index.html -d playground/dist",
+		"playground:start": "concurrently \"npm run dev:packages\" \"parcel playground/src/index.html -d playground/dist\""
+	},
+	"lint-staged": {
+		"packages/*/package.json": [
+			"wp-scripts lint-pkg-json"
+		],
+		"*.scss": [
+			"wp-scripts lint-style"
+		],
+		"*.js": [
+			"wp-scripts lint-js"
+		],
+		"{docs/{toc.json,tool/*.js},packages/{*/README.md,*/src/{actions,selectors}.js,components/src/*/**/README.md}}": [
+			"node ./docs/tool"
+		],
+		"packages/**/*.js": [
+			"node ./bin/update-readmes"
+		]
 	}
 }
