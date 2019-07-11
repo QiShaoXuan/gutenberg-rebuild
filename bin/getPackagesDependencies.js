@@ -5,6 +5,7 @@ const getPackages = require( './packages/get-packages' );
 
 let DEPENDENCIES = {}
 
+const IGNORE_DEPENDENCIES = ['puppeteer']
 
 getPackages().forEach((path) => {
   const jsonStr = fs.readFileSync( `${path}/package.json`, 'utf8' )
@@ -21,7 +22,6 @@ getPackages().forEach((path) => {
 })
 
 fs.writeFileSync( './packages-dependencies.json', JSON.stringify(DEPENDENCIES) );
-
 
 
 

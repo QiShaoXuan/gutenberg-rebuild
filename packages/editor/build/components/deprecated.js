@@ -219,12 +219,6 @@ Object.defineProperty(exports, "RichTextToolbarButton", {
     return _blockEditor.RichTextToolbarButton;
   }
 });
-Object.defineProperty(exports, "RichTextInserterItem", {
-  enumerable: true,
-  get: function get() {
-    return _blockEditor.RichTextInserterItem;
-  }
-});
 Object.defineProperty(exports, "UnstableRichTextInputEvent", {
   enumerable: true,
   get: function get() {

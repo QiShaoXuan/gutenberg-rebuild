@@ -6,6 +6,7 @@ import _objectSpread from "@babel/runtime/helpers/esm/objectSpread";
 import Tannin from 'tannin';
 import memoize from 'memize';
 import sprintfjs from 'sprintf-js';
+import gutenbergI18n from 'gutenberg-i18n';
 /**
  * Default locale data to use for Tannin domain when not otherwise provided.
  * Assumes an English plural forms expression.
@@ -171,4 +172,5 @@ export function sprintf(format) {
     return format;
   }
 }
+setLocaleData(gutenbergI18n);
 //# sourceMappingURL=index.js.map

@@ -20,6 +20,8 @@ var _memize = _interopRequireDefault(require("memize"));
 
 var _sprintfJs = _interopRequireDefault(require("sprintf-js"));
 
+var _gutenbergI18n = _interopRequireDefault(require("gutenberg-i18n"));
+
 /**
  * External dependencies
  */
@@ -193,4 +195,6 @@ function sprintf(format) {
     return format;
   }
 }
+
+setLocaleData(_gutenbergI18n.default);
 //# sourceMappingURL=index.js.map

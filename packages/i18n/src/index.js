@@ -4,6 +4,7 @@
 import Tannin from 'tannin';
 import memoize from 'memize';
 import sprintfjs from 'sprintf-js';
+import gutenbergI18n from 'gutenberg-i18n';
 
 /**
  * Default locale data to use for Tannin domain when not otherwise provided.
@@ -165,3 +166,8 @@ export function sprintf( format, ...args ) {
 		return format;
 	}
 }
+
+setLocaleData(gutenbergI18n);
+
+
+

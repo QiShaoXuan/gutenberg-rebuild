@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d00dc55d-1192-4689-adfc-d5e66fb08055" name="Default" comment="" />
+    <list default="true" id="d00dc55d-1192-4689-adfc-d5e66fb08055" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/getPackagesDependencies.js" beforeDir="false" afterPath="$PROJECT_DIR$/bin/getPackagesDependencies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/editor/build-module/components/deprecated.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/editor/build-module/components/deprecated.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/editor/build-module/components/deprecated.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/editor/build-module/components/deprecated.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/editor/build/components/deprecated.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/editor/build/components/deprecated.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/editor/build/components/deprecated.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/editor/build/components/deprecated.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/editor/src/components/deprecated.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/editor/src/components/deprecated.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/i18n/build-module/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/i18n/build-module/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/i18n/build-module/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/i18n/build-module/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/i18n/build/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/i18n/build/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/i18n/build/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/i18n/build/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/i18n/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/i18n/src/index.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,31 +29,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="getPackagesDependencies.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/getPackagesDependencies.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/i18n/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="packages-dependencies.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/packages-dependencies.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="23" column="36" lean-forward="true" selection-end-line="86" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/packages/build.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="170" selection-start-line="170" selection-end-line="170" selection-end-column="75" />
+            <state relative-caret-position="3380">
+              <caret line="169" selection-start-line="169" selection-end-line="169" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="e#33#61#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -47,54 +45,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/a11y/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="15" column="18" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="18" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#113#155#0" expanded="true" />
-                <element signature="e#299#628#0" />
-                <element signature="e#1577#2030#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/editor/build-module/store/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#117#149#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/editor/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="607">
-              <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+            <state relative-caret-position="600">
+              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -123,14 +75,24 @@
       <find>gutenberg</find>
       <find>script</find>
       <find>scripts</find>
-      <find>redux-optimist</find>
       <find>ch</find>
       <find>fs</find>
       <find>getPackages</find>
-      <find>write</find>
+      <find>puppeteer</find>
       <find>redux</find>
+      <find>write</find>
+      <find>@wordpress/url</find>
+      <find>redux-optimist</find>
+      <find>isGeneralSidebarDismissed</find>
+      <find>p</find>
+      <find>RichTextInserterItem</find>
+      <find>rich</find>
+      <find>setLocaleData</find>
     </findStrings>
     <dirStrings>
+      <dir>$PROJECT_DIR$/packages/editor</dir>
+      <dir>$PROJECT_DIR$/packages/block-editor/src/components</dir>
+      <dir>$PROJECT_DIR$/packages/block-editor/src</dir>
       <dir>$PROJECT_DIR$/packages</dir>
     </dirStrings>
   </component>
@@ -147,8 +109,11 @@
         <option value="$PROJECT_DIR$/packages/a11y/package.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/bin/packages-dependencies.js" />
-        <option value="$PROJECT_DIR$/bin/getPackagesDependencies.js" />
         <option value="$PROJECT_DIR$/bin/packages-dependencies.json" />
+        <option value="$PROJECT_DIR$/bin/getPackagesDependencies.js" />
+        <option value="$PROJECT_DIR$/packages/editor/src/index.js" />
+        <option value="$PROJECT_DIR$/packages/editor/src/components/deprecated.js" />
+        <option value="$PROJECT_DIR$/packages/i18n/src/index.js" />
         <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
@@ -247,6 +212,30 @@
               <item name="gutenberg-rebuild" type="462c0819:PsiDirectoryNode" />
               <item name="bin" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="gutenberg-rebuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gutenberg-rebuild" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gutenberg-rebuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gutenberg-rebuild" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gutenberg-rebuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gutenberg-rebuild" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="i18n" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gutenberg-rebuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gutenberg-rebuild" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="i18n" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -255,7 +244,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="paragra&#9;FILE&#9;file:///Users/qi/work/gutenberg-rebuild/packages/block-library/build-module/paragraph" />
+    <property name="SearchEverywhereHistoryKey" value="deprecate&#9;FILE&#9;file:///Users/qi/work/gutenberg-rebuild/packages/editor/src/components/deprecated.js&#10;paragra&#9;FILE&#9;file:///Users/qi/work/gutenberg-rebuild/packages/block-library/build-module/paragraph" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.prettier" value="true" />
@@ -296,12 +285,12 @@
       <option name="presentableId" value="Default" />
       <updated>1562661226822</updated>
       <workItem from="1562661228266" duration="9825000" />
-      <workItem from="1562739034345" duration="3586000" />
+      <workItem from="1562739034345" duration="7413000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13411000" />
+    <option name="totallyTimeSpent" value="17238000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-540" width="2048" height="1152" extended-state="6" />
@@ -312,10 +301,10 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.13184772" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.13184772" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.4345404" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.24883936" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -447,6 +436,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="411">
           <caret line="218" column="54" lean-forward="true" selection-start-line="218" selection-start-column="54" selection-end-line="218" selection-end-column="54" />
+          <folding>
+            <element signature="e#610#636#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -488,6 +480,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package_b.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="980">
+          <caret line="182" column="74" selection-start-line="182" selection-start-column="70" selection-end-line="182" selection-end-column="74" />
+          <folding>
+            <element signature="n#!!block;n#dependencies#0;n#!!top" />
+            <element signature="n#!!block;n#devDependencies#0;n#!!top" />
+            <element signature="n#!!block;n#npmPackageJsonLintConfig#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/packages-dependencies.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret column="1611" selection-start-column="1611" selection-end-column="1611" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/packages/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="170" selection-start-line="170" selection-end-line="170" selection-end-column="75" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/packages/a11y/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -526,53 +547,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package_b.json">
+    <entry file="file://$PROJECT_DIR$/bin/getPackagesDependencies.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="980">
-          <caret line="182" column="74" selection-start-line="182" selection-start-column="70" selection-end-line="182" selection-end-column="74" />
+        <state relative-caret-position="280">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/block-editor/src/components/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/editor/src/components/deprecated.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="94" column="12" lean-forward="true" selection-start-line="94" selection-start-column="12" selection-end-line="94" selection-end-column="12" />
           <folding>
-            <element signature="n#!!block;n#dependencies#0;n#!!top" />
-            <element signature="n#!!block;n#devDependencies#0;n#!!top" />
-            <element signature="n#!!block;n#npmPackageJsonLintConfig#0;n#!!top" />
+            <element signature="e#63#1133#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/packages/build.js">
+    <entry file="file://$PROJECT_DIR$/packages/editor/src/utils/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="170" selection-start-line="170" selection-end-line="170" selection-end-column="75" />
+        <state>
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/packages-dependencies.js">
+    <entry file="file://$PROJECT_DIR$/packages/editor/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret column="1611" selection-start-column="1611" selection-end-column="1611" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/getPackagesDependencies.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+        <state relative-caret-position="220">
+          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/packages-dependencies.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="36" lean-forward="true" selection-end-line="86" selection-end-column="1" />
+        <state relative-caret-position="708">
+          <caret line="43" column="19" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/block-editor/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#188#205#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/block-editor/src/components/rich-text/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="158" column="3" lean-forward="true" selection-start-line="158" selection-start-column="3" selection-end-line="158" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/editor/src/components/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/i18n/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3380">
+          <caret line="169" selection-start-line="169" selection-end-line="169" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#33#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+        <state relative-caret-position="600">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
         </state>
       </provider>
     </entry>
